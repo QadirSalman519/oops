@@ -4,6 +4,7 @@ require_once 'inheritance.php';
 require_once 'polymorphism.php';
 require_once 'encapsulation.php';
 require_once 'abstraction.php';
+require_once 'interfaces.php';
 
 // Inheritance Start
 echo "<h1>Inheritance</h1>";
@@ -42,5 +43,16 @@ echo $child2->getGender() . " " . $child2->getAge();
 
 // Abstraction Start
 echo "<h1>Abstraction</h1>";
+$car = new Car;
+$car->begin();
+$car->start();
+$car->stop();
+// Abstraction End
+
+// Abstraction Start
+echo "<h1>Interfaces</h1>";
+$class3 = new Class3;
+$class3->start();
+$class3->end();
 // Abstraction End
 ?>
